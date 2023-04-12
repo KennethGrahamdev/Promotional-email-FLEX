@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="x-apple-disable-message-reformatting">
     <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no">
-    <meta name="color-scheme" content="light">
-    <meta name="supported-color-schemes" content="light">
+    <meta name="color-scheme" content="light dark">
+    <meta name="supported-color-schemes" content="light dark">
     <!--[if !mso]><!-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!--<![endif]-->
@@ -94,20 +94,29 @@
       /* Media Queries end */
 
       /* Custom Dark Mode Colors start */
-      :root {
-         color-scheme: light dark;
-         supported-color-schemes: light dark;
-      }
+    /* For newer versions of Apple Mail */
+       :root {
+	       color-scheme: light dark;
+	       supported-color-schemes: light dark;
+           }
+    /* For newer versions of Apple Mail */
       @media (prefers-color-scheme: dark) {
-         body, center, .darkmode-bg {
-            background: #2d2d2d!important;
+        body, center {
+            background: #212425!important;
             color: #ffffff!important;
          }
-         .darkmode-transparent {
-            background-color: transparent!important;
+         .dark-bg {
+             background: #181a1b!important;
+         }
+         .btn {
+             color: #181a1b!important;
+         }
+         p, h1, h2, .nav-text {
+              color: #dddad6!important;
          }
       }
       /* Custom Dark Mode Colors end */
+
    </style>
 	<!--[if mso]>
 		<style type="text/css">
@@ -159,12 +168,12 @@
                     <!-- Navigation start -->
                     <table class="section-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                         <tr>
-                          <td style="text-align:center;background-color: #ffffff;padding: 24px 18px;">
+                          <td class="dark-bg" style="text-align:center;background-color: #ffffff;padding: 24px 18px;">
                               <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                                 <tr>
                                     <td class="nav-logo-container" style="width: 130px;text-align: left;">
                                       <a href="https://store.unionlosangeles.com/" target="_blank" style="text-decoration: none;">
-                                          <img class="nav-logo" src="https://i.postimg.cc/WpCDyRPQ/Union-logo.png" alt="Union logo" width="120" style="display: block;height: auto;border: 0;color: #111111;font-size: 32px;font-weight: bold;">
+                                          <img class="nav-logo" src="https://i.postimg.cc/ZngWWvSg/Union-logo.png" alt="Union logo" width="120" style="display: block;height: auto;border: 0;color: #111111;font-size: 32px;font-weight: bold;">
                                       </a>
                                     </td>
                                     <td style="width: 120px;text-align: center;">
@@ -191,7 +200,7 @@
                     <!-- Hero start -->
                     <table class="section-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                         <tr>
-                          <td style="text-align:center;background-color: #ffffff">
+                          <td class="dark-bg" style="text-align:center;background-color: #ffffff">
                             <table class="content-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                               <tr>
                                   <td style="text-align: center;">
@@ -208,7 +217,7 @@
                     <!-- Heading 1 start -->
                     <table class="section-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                         <tr>
-                          <td style="text-align:center;background-color: #ffffff;padding: 20px;">
+                          <td class="dark-bg" style="text-align:center;background-color: #ffffff;padding: 20px;">
                             <table class="content-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                               <tr>
                                   <!--[if mso]>
@@ -227,7 +236,7 @@
                     </table>
                     <!-- Heading 1 end -->
                     <!-- Shoes row 1 start -->
-                    <div class="two-col" style="text-align:center;font-size:0;">
+                    <div class="two-col dark-bg" style="text-align:center;font-size:0;">
                         <!--[if mso]>
                             <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                             <tr>
@@ -271,7 +280,7 @@
                     </div>
                     <!-- Shoes row 1 end -->
                     <!-- Shoes row 2 start -->
-                    <div class="two-col" style="text-align:center;font-size:0;">
+                    <div class="two-col dark-bg" style="text-align:center;font-size:0;">
                         <!--[if mso]>
                             <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                             <tr>
@@ -315,7 +324,7 @@
                     </div>
                     <!-- Shoes row 2 end -->
                     <!-- Shoes row 3 start -->
-                    <div class="two-col" style="text-align:center;font-size:0;">
+                    <div class="two-col dark-bg" style="text-align:center;font-size:0;">
                         <!--[if mso]>
                             <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                             <tr>
@@ -361,7 +370,7 @@
                     <!-- CTA start -->
                     <table class="section-container" role="presentation" cellspacing="0" cellpadding="0" border="0"  width="100%">
                         <tr>
-                          <td style="text-align:center;padding-bottom: 40px;">
+                          <td class="dark-bg" style="text-align:center;padding-bottom: 40px;">
                               <div>
                                   <!--[if mso]>
                                     <v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://store.unionlosangeles.com/collections/footwear" style="height:46px;v-text-anchor:middle;width:264px;" strokecolor="#daa51f" fillcolor="#daa51f">
@@ -370,7 +379,7 @@
                                     </v:rect>
                                 <![endif]-->
                                 <a href="https://store.unionlosangeles.com/collections/footwear"
-                                style="background-color:#daa51f;border:1px solid #daa51f;color:#111111;display:inline-block;font-family: 'Inter', sans-serif;font-size:16px;font-weight:400;line-height:46px;text-align:center;text-decoration:none;width:264px;-webkit-text-size-adjust:none;mso-hide:all;">
+                                class="btn" style="background-color:#daa51f;border:1px solid #daa51f;color:#111111;display:inline-block;font-family: 'Inter', sans-serif;font-size:16px;font-weight:400;line-height:46px;text-align:center;text-decoration:none;width:264px;-webkit-text-size-adjust:none;mso-hide:all;">
                                 SHOP FOOTWEAR
                                 </a>
                               </div>
@@ -381,7 +390,7 @@
                     <!-- Divider start -->
                     <table class="section-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                         <tr>
-                          <td style="text-align:center;background-color: #ffffff;padding: 0px 24px 0 24px;">
+                          <td class="dark-bg" style="text-align:center;background-color: #ffffff;padding: 0px 24px 0 24px;">
                             <!-- Ghost table for MSO 2007 - 2013 -->
                             <!--[if mso]>
                               <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="546" align="center" style="width: 546px;">
@@ -402,7 +411,7 @@
                     <!-- Heading 2 start -->
                     <table class="section-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                         <tr>
-                          <td style="text-align:center;background-color: #ffffff;">
+                          <td class="dark-bg" style="text-align:center;background-color: #ffffff;">
                             <table class="content-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                               <tr>
                                 <td style="text-align: center;">
@@ -419,22 +428,22 @@
                     <!-- Social media start -->
                     <table class="section-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                       <tr>
-                          <td>
+                          <td class="dark-bg">
                               <table class="content-container" role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="174">
                                 <tr>
                                   <td style="text-align:center;">
                                         <a href="https://twitter.com/unionlosangeles" target="_blank" style="text-decoration: none;">
-                                            <img src="https://i.postimg.cc/SsKXBkRp/twitter-icon.png" width="32" style="border: 0;height: auto;" alt="twitter icon">
+                                            <img src="https://i.postimg.cc/0NMKqf1S/twitter-icon.png" width="32" style="border: 0;height: auto;" alt="twitter icon">
                                         </a>
                                   </td>
                                   <td style="text-align:center;">
                                         <a href="https://www.facebook.com/UnionLosAngeles" target="_blank" style="text-decoration: none;">
-                                            <img src="https://i.postimg.cc/6317wg44/facebook-icon.png" width="32" style="border: 0;height: auto;" alt="facebook icon">
+                                            <img src="https://i.postimg.cc/KvZ8ryQj/facebook-icon.png" width="32" style="border: 0;height: auto;" alt="facebook icon">
                                         </a>
                                   </td>
                                   <td style="text-align:center;">
                                         <a href="https://www.instagram.com/unionlosangeles" target="_blank" style="text-decoration: none;">
-                                            <img src="https://i.postimg.cc/7hG5L9Ss/instagram-icon.png" width="32" style="border: 0;height: auto;" alt="instagram icon">
+                                            <img src="https://i.postimg.cc/SQgXJs7V/instagram-icon.png" width="32" style="border: 0;height: auto;" alt="instagram icon">
                                         </a>
                                   </td>
                                 </tr>
@@ -446,7 +455,7 @@
                     <!-- Footer start -->
                     <table class="section-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                       <tr>
-                        <td style="text-align:center;">
+                        <td class="dark-bg" style="text-align:center;">
                             <p class="footer-text" style="margin: 20px; font-size: 16px;line-height: 20pt;color: #111111;font-weight: 400;font-family: 'Open Sans', sans-serif;">
                                 No longer want to receive these emails? 
                                 <a class="footer-link" href="https://example.com" target="_blank" style="text-decoration: underline;color: #197bbd;">
