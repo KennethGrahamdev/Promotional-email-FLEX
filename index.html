@@ -1,488 +1,511 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="https://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
-<head>
-    <!-- For clients that strip head tag -->
-</head>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="x-apple-disable-message-reformatting">
-    <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no">
-    <meta name="color-scheme" content="light dark">
-    <meta name="supported-color-schemes" content="light dark">
-    <!--[if !mso]><!-->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!--<![endif]-->
-    <title>Union</title>
-    <!--[if mso]>
-    <style type="text/css">
-        table {border-collapse:collapse;border:0;border-spacing:0;margin:0;}
-        div, td {padding:0;}
-        div {margin:0 !important;}
-    </style>
-    <noscript>
-    <xml>
-        <o:OfficeDocumentSettings>
-            <o:PixelsPerInch>96</o:PixelsPerInch>
-        </o:OfficeDocumentSettings>
-    </xml>
-    </noscript>
-    <![endif]-->
-   <style type="text/css">
-      /* Fonts start */
+    <head>
+        <!-- For clients that strip head tag -->
+    </head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="x-apple-disable-message-reformatting">
+        <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no">
+        <meta name="color-scheme" content="light dark">
+        <meta name="supported-color-schemes" content="light dark">
+        <!--[if !mso]><!-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!--<![endif]-->
+        <title>Union</title>
+        <!--[if mso]>
+        <style type="text/css">
+            table {
+                border-collapse: collapse;
+                border: 0;
+                border-spacing: 0;
+                margin: 0;
+            }
 
-      /* Fonts end */
+            div,
+            td {
+                padding: 0;
+            }
 
-      /* CSS Reset start */
-      * {
-            box-sizing: border-box;
-        }
-      table {
-			border-spacing: 0;
-		}
-      td {
-         padding: 0;
-      }
+            div {
+                margin: 0 !important;
+            }
+        </style>
+        <noscript>
+            <xml>
+                <o:OfficeDocumentSettings>
+                    <o:PixelsPerInch>96</o:PixelsPerInch>
+                </o:OfficeDocumentSettings>
+            </xml>
+        </noscript>
+        <![endif]-->
+        <style>
+            /* Fonts */
+            @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Open+Sans:wght@400;500;700&display=swap');
+        </style>
+        <style type="text/css">
+            /* CSS Reset */
+            * {
+                box-sizing: border-box;
+            }
 
-      img {
-         border: 0;
-      }
+            table {
+                border-spacing: 0;
+            }
 
-      /* Removes blue and underline defaults in IOS */
-      a[x-apple-data-detectors] {
-      color:inherit !important;
-      text-decoration:none !important;
-      font-size:inherit !important;
-      font-family:inherit !important;
-      font-weight:inherit !important;
-      line-height:inherit !important;
-      }
+            td {
+                padding: 0;
+            }
 
-      /* Removes Samsung blue links */
-      #MessageViewBody a {
-      color: inherit;
-      text-decoration: none;
-      font-size: inherit;
-      font-family: inherit;
-      font-weight: inherit;
-      line-height: inherit;
-      }
-      /* CSS Reset end */
+            img {
+                border: 0;
+            }
 
-      /* Media Queries start */
-      @media screen and (max-width: 599.98px) {
-          .nav-text {
-              display: none!important;
-          }
-          .nav-logo {
-              display: inline-block!important;
-              width: 150px!important;
-          }
-          .nav-logo-container {
-              width: 100%!important;
-              text-align: center!important;
-          }
-          .shoe-img {
-              width: 300px!important;
-          }
-      }
-      @media screen and (max-width: 449.98px) {
-          .shoe-img {
-              width: 262px!important;
-          }
-      }
-      /* Media Queries end */
+            /* Removes blue and underline defaults in IOS */
+            a[x-apple-data-detectors] {
+                color: inherit !important;
+                text-decoration: none !important;
+                font-size: inherit !important;
+                font-family: inherit !important;
+                font-weight: inherit !important;
+                line-height: inherit !important;
+            }
 
-      /* Custom Dark Mode Colors start */
-    /* For newer versions of Apple Mail */
-       :root {
-	       color-scheme: light dark;
-	       supported-color-schemes: light dark;
-           }
-    /* For newer versions of Apple Mail */
-      @media (prefers-color-scheme: dark) {
-        body, center {
-            background: #212425!important;
-        }
-        p, h1, h2, .nav-text {
-            color: #dddad6!important;
-        }
-        .dark-bg {
-            background: #181a1b!important;
-        }
-        .btn {
-            color: #181a1b!important;
-            border: none!important;
-        }
-      }
-      /* Custom Dark Mode Colors end */
+            /* Removes Samsung blue links */
+            #MessageViewBody a {
+                color: inherit;
+                text-decoration: none;
+                font-size: inherit;
+                font-family: inherit;
+                font-weight: inherit;
+                line-height: inherit;
+            }
+            /* Media Queries */
+            @media screen and (max-width: 599.98px) {
+                .nav-text {
+                    display: none !important;
+                }
 
-   </style>
-	<!--[if mso]>
-		<style type="text/css">
-			table {border-collapse: collapse !important;}
-            a {text-decoration: none;}
-		</style>
-	<![endif]-->
-</head>
-<body style="Margin:0;padding:0;min-width:100%;background-color:#EFEFEF;">
-   <center style="width: 100%;background-color: #EFEFEF;">
-      <!--[if mso >
+                .nav-logo {
+                    display: inline-block !important;
+                    width: 150px !important;
+                }
+
+                .nav-logo-container {
+                    width: 100% !important;
+                    text-align: center !important;
+                }
+
+                .shoe-img {
+                    width: 300px !important;
+                }
+            }
+
+            @media screen and (max-width: 449.98px) {
+                .shoe-img {
+                    width: 262px !important;
+                }
+            }
+            /* Custom Dark Mode Colors */
+            :root {
+                color-scheme: light dark;
+                supported-color-schemes: light dark;
+            }
+
+            @media (prefers-color-scheme: dark) {
+
+                body,
+                center {
+                    background: #212425 !important;
+                }
+
+                p,
+                h1,
+                h2,
+                .nav-text {
+                    color: #dddad6 !important;
+                }
+
+                .dark-bg {
+                    background: #181a1b !important;
+                }
+
+                .btn {
+                    color: #181a1b !important;
+                    border: none !important;
+                }
+            }
+        </style>
+        <!--[if mso]>
+        <style type="text/css">
+            table {
+                border-collapse: collapse !important;
+            }
+
+            a {
+                text-decoration: none;
+            }
+        </style>
+        <![endif]-->
+    </head>
+    <body style="Margin:0;padding:0;min-width:100%;background-color:#EFEFEF;">
+        <center style="width: 100%;background-color: #EFEFEF;">
+            <!--[if mso >
       <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #f7f7f7;">
         <tr>
           <td>
       <![endif]-->
-      <div style="max-width: 600px;background-color: #f7f7f7;">
-         <div style="display: none; max-height: 0px; overflow: hidden;">
-            <!-- Preheader text -->
-            &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847;
-            &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847;&#847; &#847; &#847; &#847; &#847; 
-            &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847;&#847; &#847; &#847; &#847; &#847; 
-            &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847;&#847; &#847; &#847; &#847; &#847; 
-            &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847;&#847; &#847; &#847; &#847; &#847; 
-            &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847;&#847; &#847; &#847; &#847; &#847; 
-            &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847;&#847; &#847; &#847; &#847; &#847; 
-            &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847;&#847; &#847; &#847; &#847; &#847; 
-            &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847;&#847; &#847; &#847; &#847; &#847; 
-         </div>
-         <!-- Ghost table for rendering in MSO 2007 - 2010 start -->
-         <!--[if mso]>
-            <table style="width: 600px;" width="600" role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
-            <tr>
-            <td style="padding:0;">
-         <![endif]-->
-         <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="Margin:0;padding:0;width: 100%;max-width: 600px;background-color: #ffffff;">
-            <tr>
-                <td>
-                    <!-- Header start -->
-                    <table class="section-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                        <tr>
-                            <td style="text-align: center;background-color: #222427;padding: 10px;">
-                                <p style="margin: 0; font-size: 16px;line-height: 1.4;color: #ffffff;font-weight: 400;font-family:'Open Sans', sans-serif;">
-                                    Free U.S. shipping on select items over $150
-                                </p>
-                            </td>
-                        </tr>
-                    </table>
-                    <!-- Header end -->
-                    <!-- Navigation start -->
-                    <table class="section-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                        <tr>
-                          <td class="dark-bg" style="text-align:center;background-color: #ffffff;padding: 24px 18px;">
-                              <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+            <div style="max-width: 600px;background-color: #f7f7f7;">
+                <div style="display: none; max-height: 0px; overflow: hidden;">
+                    <!-- Preheader text -->
+                    New Arrivals: NIKE & JORDAN...Available now in-store + online...&#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847;
+                    &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847;&#847; &#847; &#847; &#847; &#847;
+                    &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847;&#847; &#847; &#847; &#847; &#847;
+                    &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847;&#847; &#847; &#847; &#847; &#847;
+                    &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847;&#847; &#847; &#847; &#847; &#847;
+                    &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847;&#847; &#847; &#847; &#847; &#847;
+                    &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847;&#847; &#847; &#847; &#847; &#847;
+                    &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847;&#847; &#847; &#847; &#847; &#847;
+                    &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847;&#847; &#847; &#847; &#847; &#847;
+                </div>
+                <!-- Ghost table for rendering in MSO 2007 - 2010 start -->
+                <!--[if mso]>
+                <table style="width: 600px;" width="600" role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
+                    <tr>
+                        <td style="padding:0;">
+                <![endif]-->
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="Margin:0;padding:0;width: 100%;max-width: 600px;background-color: #ffffff;">
                                 <tr>
-                                    <td class="nav-logo-container" style="width: 130px;text-align: left;">
-                                      <a href="https://store.unionlosangeles.com/" target="_blank" style="text-decoration: none;">
-                                          <img class="nav-logo" src="https://i.postimg.cc/ZngWWvSg/Union-logo.png" alt="Union logo" width="120" style="display: block;height: auto;border: 0;color: #111111;font-size: 32px;font-weight: bold;">
-                                      </a>
-                                    </td>
-                                    <td style="width: 120px;text-align: center;">
-                                      <a class="nav-text" href="https://store.unionlosangeles.com/collections/clothing" target="_blank" style="font-size: 16px;line-height: 1.4;color: #111111;font-weight: 400;text-decoration: none;font-family: 'Inter', sans-serif;text-decoration: none;text-transform: capitalize;">
-                                          CLOTHING
-                                      </a> 
-                                    </td>
-                                    <td style="width: 120px;text-align: center;">
-                                      <a class="nav-text" href="https://store.unionlosangeles.com/collections/footwear" target="_blank" style="font-size: 16px;line-height: 1.4;color: #111111;font-weight: 400;text-decoration: none;font-family: 'Inter', sans-serif;text-decoration: none;text-transform: capitalize;">
-                                          FOOTWEAR
-                                      </a> 
-                                    </td>
-                                    <td style="width: 120px;text-align: center;">
-                                      <a class="nav-text" href="https://store.unionlosangeles.com/collections/new-releases" target="_blank" style="font-size: 16px;line-height: 1.4;color: #111111;font-weight: 400;text-decoration: none;font-family: 'Inter', sans-serif;text-decoration: none;text-transform: capitalize;">
-                                          RELEASES
-                                      </a> 
+                                    <td>
+                                        <!-- Header start -->
+                                        <table class="section-container" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
+                                            <tr>
+                                                <td style="text-align: center;background-color: #222427;padding: 10px;">
+                                                    <p style="margin: 0; font-size: 16px;line-height: 1.4;color: #ffffff;font-weight: 400;font-family:'Open Sans', sans-serif;">
+                                                        Free U.S. shipping on select items over $150
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!-- Header end -->
+                                        <!-- Navigation start -->
+                                        <table class="section-container" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
+                                            <tr>
+                                                <td class="dark-bg" style="text-align:center;background-color: #ffffff;padding: 24px 18px;">
+                                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
+                                                        <tr>
+                                                            <td class="nav-logo-container" style="width: 130px;text-align: left;">
+                                                                <a href="https://store.unionlosangeles.com/" target="_blank" style="text-decoration: none;">
+                                                                    <img class="nav-logo" src="https://kgportfoliosite.s3.us-west-1.amazonaws.com/Website/assets/images/images/Union/images/Union-logo.png" alt="Union logo" width="120" style="display: block;height: auto;border: 0;color: #111111;font-size: 32px;font-weight: bold;">
+                                                                </a>
+                                                            </td>
+                                                            <td style="width: 120px;text-align: center;">
+                                                                <a class="nav-text" href="https://store.unionlosangeles.com/collections/clothing" target="_blank" style="font-size: 16px;line-height: 1.4;color: #111111;font-weight: 400;text-decoration: none;font-family: 'Inter', sans-serif;text-decoration: none;text-transform: capitalize;">
+                                                                    CLOTHING
+                                                                </a>
+                                                            </td>
+                                                            <td style="width: 120px;text-align: center;">
+                                                                <a class="nav-text" href="https://store.unionlosangeles.com/collections/footwear" target="_blank" style="font-size: 16px;line-height: 1.4;color: #111111;font-weight: 400;text-decoration: none;font-family: 'Inter', sans-serif;text-decoration: none;text-transform: capitalize;">
+                                                                    FOOTWEAR
+                                                                </a>
+                                                            </td>
+                                                            <td style="width: 120px;text-align: center;">
+                                                                <a class="nav-text" href="https://store.unionlosangeles.com/collections/new-releases" target="_blank" style="font-size: 16px;line-height: 1.4;color: #111111;font-weight: 400;text-decoration: none;font-family: 'Inter', sans-serif;text-decoration: none;text-transform: capitalize;">
+                                                                    RELEASES
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!-- Navigation end -->
+                                        <!-- Hero start -->
+                                        <table class="section-container" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
+                                            <tr>
+                                                <td class="dark-bg" style="text-align:center;background-color: #ffffff">
+                                                    <table class="content-container" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
+                                                        <tr>
+                                                            <td style="text-align: center;">
+                                                                <a href="https://store.unionlosangeles.com/collections/footwear" target="_blank" style="text-decoration: none;">
+                                                                    <img src="https://kgportfoliosite.s3.us-west-1.amazonaws.com/Website/assets/images/images/Union/images/Header-logo.png" alt="Bottom of Nike Air Jordan sneaker." width="600" style="width: 100%;height: auto;border: 0;color: #eb1414;font-size: 16px;">
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!-- Hero end -->
+                                        <!-- Heading 1 start -->
+                                        <table class="section-container" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
+                                            <tr>
+                                                <td class="dark-bg" style="text-align:center;background-color: #ffffff;padding: 20px;">
+                                                    <table class="content-container" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
+                                                        <tr>
+                                                    <!--[if mso]>
+                                                </td>
+                                                <td style="text-align: center;padding: 20px;">
+                                                    <![endif]-->
+                                                <td style="text-align: center;">
+                                                    <h1 style="font-size: 22px;line-height: 1.4;color: #111111;font-weight: 700;font-family: 'Open Sans', sans-serif;text-transform: capitalize;">
+                                                        SHOP NIKE & JORDAN BRAND FOOTWEAR
+                                                    </h1>
+                                                </td>
+                                            </tr>
+                                        </table>
                                     </td>
                                 </tr>
-                              </table>
-                          </td>
-                        </tr>
-                    </table>
-                    <!-- Navigation end -->
-                    <!-- Hero start -->
-                    <table class="section-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                        <tr>
-                          <td class="dark-bg" style="text-align:center;background-color: #ffffff">
-                            <table class="content-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                              <tr>
-                                  <td style="text-align: center;">
-                                      <a href="https://store.unionlosangeles.com/collections/footwear" target="_blank" style="text-decoration: none;">
-                                          <img src="https://i.postimg.cc/MT0yx8Dx/Header-logo.png" alt="Bottom of Nike Air Jordan sneaker." width="600" style="width: 100%;height: auto;border: 0;color: #eb1414;font-size: 16px;">
-                                      </a>
-                                    </td>
-                              </tr>
                             </table>
-                          </td>
-                        </tr>
-                    </table>
-                    <!-- Hero end -->
-                    <!-- Heading 1 start -->
-                    <table class="section-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                        <tr>
-                          <td class="dark-bg" style="text-align:center;background-color: #ffffff;padding: 20px;">
-                            <table class="content-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                              <tr>
-                                  <!--[if mso]>
-                                    </td>
-                                    <td style="text-align: center;padding: 20px;">
-                                  <![endif]-->
-                                <td style="text-align: center;">
-                                  <h1 style="font-size: 22px;line-height: 1.4;color: #111111;font-weight: 700;font-family: 'Open Sans', sans-serif;text-transform: capitalize;">
-                                      SHOP NIKE & JORDAN BRAND FOOTWEAR
-                                  </h1>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                    </table>
-                    <!-- Heading 1 end -->
-                    <!-- Shoes row 1 start -->
-                    <div class="two-col dark-bg" style="text-align:center;font-size:0;">
-                        <!--[if mso]>
-                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                            <tr>
-                            <td style="width:300px;padding-bottom: 20px;" valign="middle">
-                        <![endif]-->
-                        <div class="shoe-mobile" style="width:100%;max-width:300px;display:inline-block;vertical-align:middle;">
-                            <div class="product-text" style="text-align: center;display: inline-block;padding-bottom: 20px;">
-                                <a href="https://store.unionlosangeles.com/products/nike-air-max-97-og" target="_blank" style="text-decoration: none;">
-                                    <img class="shoe-img" src="https://i.postimg.cc/1tVtS0rQ/nike-air-max.png" alt="Nike Air Max 97 OG" width="262" style="display: block;height: auto;border: 0;color: #eb1414;font-size: 24px;">
-                                    <p style="margin: 20px 0px 6px 0px;font-size: 16px;line-height: 1.4;color: #111111;font-weight: 400;font-family: 'Inter', sans-serif;text-transform: capitalize;">
-                                        NIKE AIR MAX 97 OG
-                                    </p>
-                                    <p style="margin: 6px 0px 20px 0px;font-size: 16px;line-height: 1.4;color: #808080;font-weight: 400;font-family: 'Inter', sans-serif;text-transform: capitalize;">
-                                    $185.00
-                                    </p>
-                                </a>                                      
-                            </div>
-                        </div>
-                        <!--[if mso]>
-                            </td>
-                            <td style="width:300px;padding-bottom: 20px;" valign="middle">
-                        <![endif]-->
-                        <div class="shoe-mobile" style="width:100%;max-width:300px;display:inline-block;vertical-align:middle;">
-                            <div class="product-text" style="text-align: center;display: inline-block;padding-bottom: 20px;">
-                                <a href="https://store.unionlosangeles.com/products/nike-air-max-penny-2" target="_blank" style="text-decoration: none;">
-                                    <img class="shoe-img" src="https://i.postimg.cc/BZgxV4bB/Nike-air-penny.png" alt="Nike Air Max Penny" width="262" style="display: block;height: auto;border: 0;color: #eb1414;font-size: 24px;">
-                                    <p style="margin: 20px 0px 6px 0px;font-size: 16px;line-height: 1.4;color: #111111;font-weight: 400;font-family: 'Inter', sans-serif;text-transform:                                             capitalize;">
-                                        NIKE AIR MAX PENNY
-                                    </p>
-                                    <p style="margin: 6px 0px 20px 0px;font-size: 16px;line-height: 1.4;color: #808080;font-weight: 400;font-family: 'Inter', sans-serif;text-transform: capitalize;">
-                                        $170.00
-                                    </p>
-                                </a>                                      
-                            </div>
-                        </div>
-                        <!--[if mso]>
-                            </td>
-                            </tr>
-                            </table>
-                        <![endif]-->
-                    </div>
-                    <!-- Shoes row 1 end -->
-                    <!-- Shoes row 2 start -->
-                    <div class="two-col dark-bg" style="text-align:center;font-size:0;">
-                        <!--[if mso]>
-                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                            <tr>
-                            <td style="width:300px;padding-bottom: 20px;" valign="middle">
-                        <![endif]-->
-                        <div class="shoe-mobile" style="width:100%;max-width:300px;display:inline-block;vertical-align:middle;">
-                            <div class="product-text" style="text-align: center;display: inline-block;padding-bottom: 20px;">
-                                <a href="https://store.unionlosangeles.com/products/nike-air-huarache-prm" target="_blank" style="text-decoration: none;">
-                                    <img class="shoe-img" src="https://i.postimg.cc/HkJXnM26/nike-hurache.png" alt="Nike Air Huarache" width="262" style="display: block;height: auto;border: 0;color: #eb1414;font-size: 24px;">
-                                    <p style="margin: 20px 0px 6px 0px;font-size: 16px;line-height: 1.4;color: #111111;font-weight: 400;font-family: 'Inter', sans-serif;text-transform:                                             capitalize;">
-                                        NIKE AIR HUARACHE
-                                    </p>
-                                    <p style="margin: 6px 0px 20px 0px;font-size: 16px;line-height: 1.4;color: #808080;font-weight: 400;font-family: 'Inter', sans-serif;text-transform:                                             capitalize;">
-                                        $130.00
-                                    </p>
-                                </a>                                         
-                            </div>
-                        </div>
-                        <!--[if mso]>
-                            </td>
-                            <td style="width:300px;padding-bottom: 20px;" valign="middle">
-                        <![endif]-->
-                        <div class="shoe-mobile" style="width:100%;max-width:300px;display:inline-block;vertical-align:middle;">
-                            <div class="product-text" style="text-align: center;display: inline-block;padding-bottom: 20px;">
-                                <a href="https://store.unionlosangeles.com/products/air-jordan-6-retro-2" target="_blank" style="text-decoration: none;">
-                                    <img class="shoe-img" src="https://i.postimg.cc/rsQx0C3P/Jordan-6.png" alt="Air Jordan 6 Retro" width="262" style="display: block;height: auto;border: 0;color: #eb1414;font-size: 24px;">
-                                    <p style="margin: 20px 0px 6px 0px;font-size: 16px;line-height: 1.4;color: #111111;font-weight: 400;font-family: 'Inter', sans-serif;text-transform:                                             capitalize;">
-                                        AIR JORDAN 6 RETRO
-                                    </p>
-                                    <p style="margin: 6px 0px 20px 0px;font-size: 16px;line-height: 1.4;color: #808080;font-weight: 400;font-family: 'Inter', sans-serif;text-transform: capitalize;">
-                                        $200.00
-                                    </p>
-                                </a>                                     
-                            </div>
-                        </div>
-                        <!--[if mso]>
-                            </td>
-                            </tr>
-                            </table>
-                        <![endif]-->
-                    </div>
-                    <!-- Shoes row 2 end -->
-                    <!-- Shoes row 3 start -->
-                    <div class="two-col dark-bg" style="text-align:center;font-size:0;">
-                        <!--[if mso]>
-                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                            <tr>
-                            <td style="width:300px;padding-bottom: 20px;" valign="middle">
-                        <![endif]-->
-                        <div class="shoe-mobile" style="width:100%;max-width:300px;display:inline-block;vertical-align:middle;">
-                            <div class="product-text" style="text-align: center;display: inline-block;padding-bottom: 20px;">
-                                <a href="https://store.unionlosangeles.com/products/air-jordan-12-retro-2" target="_blank" style="text-decoration: none;">
-                                    <img class="shoe-img" src="https://i.postimg.cc/zX2Tq7nL/Jordan-12.png" alt="Air Jordan 12 Retro" width="262" style="display: block;height: auto;border: 0;color: #eb1414;font-size: 24px;">
-                                    <p style="margin: 20px 0px 6px 0px;font-size: 16px;line-height: 1.4;color: #111111;font-weight: 400;font-family: 'Inter', sans-serif;text-transform:                                             capitalize;">
-                                        AIR JORDAN 12 
-                                    </p>
-                                    <p style="margin: 6px 0px 20px 0px;font-size: 16px;line-height: 1.4;color: #808080;font-weight: 400;font-family: 'Inter', sans-serif;text-transform:                                             capitalize;">
-                                        $200.00
-                                    </p>
-                                </a>                                            
-                            </div>
-                        </div>
-                        <!--[if mso]>
-                            </td>
-                            <td style="width:300px;padding-bottom: 20px;" valign="middle">
-                        <![endif]-->
-                        <div class="shoe-mobile" style="width:100%;max-width:300px;display:inline-block;vertical-align:middle;">
-                            <div class="product-text" style="text-align: center;display: inline-block;padding-bottom: 20px;">
-                                <a href="https://store.unionlosangeles.com/products/air-jordan-1-low" target="_blank" style="text-decoration: none;">
-                                    <img class="shoe-img" src="https://i.postimg.cc/vHZWRk6F/Jordan-1.png" alt="Air Jordan 1 Low" width="262" style="display: block;height: auto;border: 0;color: #eb1414;font-size: 24px;">
-                                    <p style="margin: 20px 0px 6px 0px;font-size: 16px;line-height: 1.4;color: #111111;font-weight: 400;font-family: 'Inter', sans-serif;text-transform:                                             capitalize;">
-                                        AIR JORDAN 1 LOW
-                                    </p>
-                                    <p style="margin: 6px 0px 20px 0px;font-size: 16px;line-height: 1.4;color: #808080;font-weight: 400;font-family: 'Inter', sans-serif;text-transform: capitalize;">
-                                        $110.00
-                                    </p>
-                                </a>                                     
-                            </div>
-                        </div>
-                        <!--[if mso]>
-                            </td>
-                            </tr>
-                            </table>
-                        <![endif]-->
-                    </div>
-                    <!-- Shoes row 3 end -->
-                    <!-- CTA start -->
-                    <table class="section-container" role="presentation" cellspacing="0" cellpadding="0" border="0"  width="100%">
-                        <tr>
-                          <td class="dark-bg" style="text-align:center;padding-bottom: 40px;">
-                              <div>
-                                  <!--[if mso]>
-                                    <v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://store.unionlosangeles.com/collections/footwear" style="height:46px;v-text-anchor:middle;width:264px;" strokecolor="#daa51f" fillcolor="#daa51f">
-                                        <w:anchorlock/>
-                                        <center style="color:#111111;font-family: 'Inter', sans-serif;font-size:16px;font-weight:400;">SHOP FOOTWEAR</center>
-                                    </v:rect>
+                            <!-- Heading 1 end -->
+                            <!-- Shoes row 1 start -->
+                            <div class="two-col dark-bg" style="text-align:center;font-size:0;">
+                                <!--[if mso]>
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
+                                    <tr>
+                                        <td style="width:300px;padding-bottom: 20px;" valign="middle">
                                 <![endif]-->
-                                <a href="https://store.unionlosangeles.com/collections/footwear"
-                                class="btn" style="background-color:#daa51f;border:1px solid #daa51f;color:#111111;display:inline-block;font-family: 'Inter', sans-serif;font-size:16px;font-weight:400;line-height:46px;text-align:center;text-decoration:none;width:264px;-webkit-text-size-adjust:none;mso-hide:all;">
-                                SHOP FOOTWEAR
-                                </a>
-                              </div>
-                          </td>
-                        </tr>
-                    </table>
-                    <!-- CTA end -->
-                    <!-- Divider start -->
-                    <table class="section-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                        <tr>
-                          <td class="dark-bg" style="text-align:center;background-color: #ffffff;padding: 0px 24px 0 24px;">
-                            <!-- Ghost table for MSO 2007 - 2013 -->
-                            <!--[if mso]>
-                              <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="546" align="center" style="width: 546px;">
-                            <![endif]-->
-                            <table class="content-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" align="center" style="max-width: 546px;">
-                              <tr>
-                                <td style="text-align:center;border-bottom: 1.3pt solid #cccccc;">
-                                </td>
-                              </tr>
-                            </table>
-                            <!--[if mso]>
-                              </table>
-                            <![endif]-->
-                          </td>
-                        </tr>
-                    </table>   
-                    <!-- Divider end -->
-                    <!-- Heading 2 start -->
-                    <table class="section-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                        <tr>
-                          <td class="dark-bg" style="text-align:center;background-color: #ffffff;">
-                            <table class="content-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                              <tr>
-                                <td style="text-align: center;">
-                                  <h2 style="Margin: 18px;font-size: 18px;line-height: 1.4;color: #111111;font-weight: 400;font-family: 'Open Sans', sans-serif;text-transform: capitalize;">
-                                      KNOW THE LEDGE
-                                  </h2>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                    </table>
-                    <!-- Heading 2 end -->
-                    <!-- Social media start -->
-                    <table class="section-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                      <tr>
-                          <td class="dark-bg">
-                              <table class="content-container" role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="174">
+                                            <div class="shoe-mobile" style="width:100%;max-width:300px;display:inline-block;vertical-align:middle;">
+                                                <div class="product-text" style="text-align: center;display: inline-block;padding-bottom: 20px;">
+                                                    <a href="https://store.unionlosangeles.com/products/nike-air-max-97-og" target="_blank" style="text-decoration: none;">
+                                                        <img class="shoe-img" src="https://kgportfoliosite.s3.us-west-1.amazonaws.com/Website/assets/images/images/Union/images/nike-air-max.png" alt="Nike Air Max 97 OG" width="262" style="display: block;height: auto;border: 0;color: #eb1414;font-size: 24px;">
+                                                        <p style="margin: 20px 0px 6px 0px;font-size: 16px;line-height: 1.4;color: #111111;font-weight: 400;font-family: 'Inter', sans-serif;text-transform: capitalize;">
+                                                            NIKE AIR MAX 97 OG
+                                                        </p>
+                                                        <p style="margin: 6px 0px 20px 0px;font-size: 16px;line-height: 1.4;color: #808080;font-weight: 400;font-family: 'Inter', sans-serif;text-transform: capitalize;">
+                                                            $185.00
+                                                        </p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <!--[if mso]>
+                                        </td>
+                                        <td style="width:300px;padding-bottom: 20px;" valign="middle">
+                                            <![endif]-->
+                                            <div class="shoe-mobile" style="width:100%;max-width:300px;display:inline-block;vertical-align:middle;">
+                                                <div class="product-text" style="text-align: center;display: inline-block;padding-bottom: 20px;">
+                                                    <a href="https://store.unionlosangeles.com/products/nike-air-max-penny-2" target="_blank" style="text-decoration: none;">
+                                                        <img class="shoe-img" src="https://kgportfoliosite.s3.us-west-1.amazonaws.com/Website/assets/images/images/Union/images/Nike-air-penny.png" alt="Nike Air Max Penny" width="262" style="display: block;height: auto;border: 0;color: #eb1414;font-size: 24px;">
+                                                        <p style="margin: 20px 0px 6px 0px;font-size: 16px;line-height: 1.4;color: #111111;font-weight: 400;font-family: 'Inter', sans-serif;text-transform:                                             capitalize;">
+                                                            NIKE AIR MAX PENNY
+                                                        </p>
+                                                        <p style="margin: 6px 0px 20px 0px;font-size: 16px;line-height: 1.4;color: #808080;font-weight: 400;font-family: 'Inter', sans-serif;text-transform: capitalize;">
+                                                            $170.00
+                                                        </p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                <!--[if mso]>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <![endif]-->
+                            </div>
+                            <!-- Shoes row 1 end -->
+                            <!-- Shoes row 2 start -->
+                            <div class="two-col dark-bg" style="text-align:center;font-size:0;">
+                                <!--[if mso]>
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
+                                    <tr>
+                                        <td style="width:300px;padding-bottom: 20px;" valign="middle">
+                                <![endif]-->
+                                            <div class="shoe-mobile" style="width:100%;max-width:300px;display:inline-block;vertical-align:middle;">
+                                                <div class="product-text" style="text-align: center;display: inline-block;padding-bottom: 20px;">
+                                                    <a href="https://store.unionlosangeles.com/products/nike-air-huarache-prm" target="_blank" style="text-decoration: none;">
+                                                        <img class="shoe-img" src="https://kgportfoliosite.s3.us-west-1.amazonaws.com/Website/assets/images/images/Union/images/nike-hurache.png" alt="Nike Air Huarache" width="262" style="display: block;height: auto;border: 0;color: #eb1414;font-size: 24px;">
+                                                        <p style="margin: 20px 0px 6px 0px;font-size: 16px;line-height: 1.4;color: #111111;font-weight: 400;font-family: 'Inter', sans-serif;text-transform:                                             capitalize;">
+                                                            NIKE AIR HUARACHE
+                                                        </p>
+                                                        <p style="margin: 6px 0px 20px 0px;font-size: 16px;line-height: 1.4;color: #808080;font-weight: 400;font-family: 'Inter', sans-serif;text-transform:                                             capitalize;">
+                                                            $130.00
+                                                        </p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <!--[if mso]>
+                                        </td>
+                                        <td style="width:300px;padding-bottom: 20px;" valign="middle">
+                                            <![endif]-->
+                                            <div class="shoe-mobile" style="width:100%;max-width:300px;display:inline-block;vertical-align:middle;">
+                                                <div class="product-text" style="text-align: center;display: inline-block;padding-bottom: 20px;">
+                                                    <a href="https://store.unionlosangeles.com/products/air-jordan-6-retro-2" target="_blank" style="text-decoration: none;">
+                                                        <img class="shoe-img" src="https://kgportfoliosite.s3.us-west-1.amazonaws.com/Website/assets/images/images/Union/images/Jordan-6.png" alt="Air Jordan 6 Retro" width="262" style="display: block;height: auto;border: 0;color: #eb1414;font-size: 24px;">
+                                                        <p style="margin: 20px 0px 6px 0px;font-size: 16px;line-height: 1.4;color: #111111;font-weight: 400;font-family: 'Inter', sans-serif;text-transform:                                             capitalize;">
+                                                            AIR JORDAN 6 RETRO
+                                                        </p>
+                                                        <p style="margin: 6px 0px 20px 0px;font-size: 16px;line-height: 1.4;color: #808080;font-weight: 400;font-family: 'Inter', sans-serif;text-transform: capitalize;">
+                                                            $200.00
+                                                        </p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                <!--[if mso]>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <![endif]-->
+                            </div>
+                            <!-- Shoes row 2 end -->
+                            <!-- Shoes row 3 start -->
+                            <div class="two-col dark-bg" style="text-align:center;font-size:0;">
+                                <!--[if mso]>
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
+                                    <tr>
+                                        <td style="width:300px;padding-bottom: 20px;" valign="middle">
+                                <![endif]-->
+                                            <div class="shoe-mobile" style="width:100%;max-width:300px;display:inline-block;vertical-align:middle;">
+                                                <div class="product-text" style="text-align: center;display: inline-block;padding-bottom: 20px;">
+                                                    <a href="https://store.unionlosangeles.com/products/air-jordan-12-retro-2" target="_blank" style="text-decoration: none;">
+                                                        <img class="shoe-img" src="https://kgportfoliosite.s3.us-west-1.amazonaws.com/Website/assets/images/images/Union/images/Jordan-12.png" alt="Air Jordan 12 Retro" width="262" style="display: block;height: auto;border: 0;color: #eb1414;font-size: 24px;">
+                                                        <p style="margin: 20px 0px 6px 0px;font-size: 16px;line-height: 1.4;color: #111111;font-weight: 400;font-family: 'Inter', sans-serif;text-transform:                                             capitalize;">
+                                                            AIR JORDAN 12
+                                                        </p>
+                                                        <p style="margin: 6px 0px 20px 0px;font-size: 16px;line-height: 1.4;color: #808080;font-weight: 400;font-family: 'Inter', sans-serif;text-transform:                                             capitalize;">
+                                                            $200.00
+                                                        </p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <!--[if mso]>
+                                        </td>
+                                        <td style="width:300px;padding-bottom: 20px;" valign="middle">
+                                            <![endif]-->
+                                            <div class="shoe-mobile" style="width:100%;max-width:300px;display:inline-block;vertical-align:middle;">
+                                                <div class="product-text" style="text-align: center;display: inline-block;padding-bottom: 20px;">
+                                                    <a href="https://store.unionlosangeles.com/products/air-jordan-1-low" target="_blank" style="text-decoration: none;">
+                                                        <img class="shoe-img" src="https://kgportfoliosite.s3.us-west-1.amazonaws.com/Website/assets/images/images/Union/images/Jordan-1.png" alt="Air Jordan 1 Low" width="262" style="display: block;height: auto;border: 0;color: #eb1414;font-size: 24px;">
+                                                        <p style="margin: 20px 0px 6px 0px;font-size: 16px;line-height: 1.4;color: #111111;font-weight: 400;font-family: 'Inter', sans-serif;text-transform:                                             capitalize;">
+                                                            AIR JORDAN 1 LOW
+                                                        </p>
+                                                        <p style="margin: 6px 0px 20px 0px;font-size: 16px;line-height: 1.4;color: #808080;font-weight: 400;font-family: 'Inter', sans-serif;text-transform: capitalize;">
+                                                            $110.00
+                                                        </p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                <!--[if mso]>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <![endif]-->
+                            </div>
+                            <!-- Shoes row 3 end -->
+                            <!-- CTA start -->
+                            <table class="section-container" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
                                 <tr>
-                                  <td style="text-align:center;">
-                                        <a href="https://twitter.com/unionlosangeles" target="_blank" style="text-decoration: none;">
-                                            <img src="https://i.postimg.cc/0NMKqf1S/twitter-icon.png" width="32" style="border: 0;height: auto;" alt="twitter icon">
-                                        </a>
-                                  </td>
-                                  <td style="text-align:center;">
-                                        <a href="https://www.facebook.com/UnionLosAngeles" target="_blank" style="text-decoration: none;">
-                                            <img src="https://i.postimg.cc/KvZ8ryQj/facebook-icon.png" width="32" style="border: 0;height: auto;" alt="facebook icon">
-                                        </a>
-                                  </td>
-                                  <td style="text-align:center;">
-                                        <a href="https://www.instagram.com/unionlosangeles" target="_blank" style="text-decoration: none;">
-                                            <img src="https://i.postimg.cc/SQgXJs7V/instagram-icon.png" width="32" style="border: 0;height: auto;" alt="instagram icon">
-                                        </a>
-                                  </td>
+                                    <td class="dark-bg" style="text-align:center;padding-bottom: 40px;">
+                                        <div>
+                                            <!--[if mso]>
+                                            <v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://store.unionlosangeles.com/collections/footwear" style="height:46px;v-text-anchor:middle;width:264px;" strokecolor="#daa51f" fillcolor="#daa51f">
+                                                <w:anchorlock />
+                                                <center style="color:#111111;font-family: 'Inter', sans-serif;font-size:16px;font-weight:400;">SHOP FOOTWEAR</center>
+                                            </v:rect>
+                                            <![endif]-->
+                                            <a href="https://store.unionlosangeles.com/collections/footwear" class="btn" style="background-color:#daa51f;border:1px solid #daa51f;color:#111111;display:inline-block;font-family: 'Inter', sans-serif;font-size:16px;font-weight:400;line-height:46px;text-align:center;text-decoration:none;width:264px;-webkit-text-size-adjust:none;mso-hide:all;">
+                                                SHOP FOOTWEAR
+                                            </a>
+                                        </div>
+                                    </td>
                                 </tr>
-                              </table>
-                          </td>
-                      </tr>
-                    </table>
-                    <!-- Social media end -->
-                    <!-- Footer start -->
-                    <table class="section-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                      <tr>
-                        <td class="dark-bg" style="text-align:center;">
-                            <p class="footer-text" style="margin: 20px; font-size: 16px;line-height: 20pt;color: #111111;font-weight: 400;font-family: 'Open Sans', sans-serif;">
-                                No longer want to receive these emails? 
-                                <a class="footer-link" href="https://example.com" target="_blank" style="text-decoration: underline;color: #197bbd;">
-                                    Unsubscribe.
-                                </a>
-                                <!-- real link was not used for the Unsubscribe text due to ESP issues -->
-                                <br>UNION LOS ANGELES 110 S Labrea Ave. Los Angeles, California 90036
-                            </p>
+                            </table>
+                            <!-- CTA end -->
+                            <!-- Divider start -->
+                            <table class="section-container" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
+                                <tr>
+                                    <td class="dark-bg" style="text-align:center;background-color: #ffffff;padding: 0px 24px 0 24px;">
+                                        <!-- Ghost table for MSO 2007 - 2013 -->
+                                        <!--[if mso]>
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="546" align="center" style="width: 546px;">
+                                        <![endif]-->
+                                            <table class="content-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" align="center" style="max-width: 546px;">
+                                                <tr>
+                                                    <td style="text-align:center;border-bottom: 1.3pt solid #cccccc;">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        <!--[if mso]>
+                                        </table>
+                                        <![endif]-->
+                                    </td>
+                                </tr>
+                            </table>
+                            <!-- Divider end -->
+                            <!-- Heading 2 start -->
+                            <table class="section-container" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
+                                <tr>
+                                    <td class="dark-bg" style="text-align:center;background-color: #ffffff;">
+                                        <table class="content-container" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
+                                            <tr>
+                                                <td style="text-align: center;">
+                                                    <h2 style="Margin: 18px;font-size: 18px;line-height: 1.4;color: #111111;font-weight: 400;font-family: 'Open Sans', sans-serif;text-transform: capitalize;">
+                                                        KNOW THE LEDGE
+                                                    </h2>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!-- Heading 2 end -->
+                            <!-- Social media start -->
+                            <table class="section-container" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
+                                <tr>
+                                    <td class="dark-bg">
+                                        <table class="content-container" role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="174" style="width: 174px;">
+                                            <tr>
+                                                <td style="text-align:center;">
+                                                    <a href="https://twitter.com/unionlosangeles" target="_blank" style="text-decoration: none;">
+                                                        <img src="https://kgportfoliosite.s3.us-west-1.amazonaws.com/Website/assets/images/images/Union/images/twitter-icon.png" width="32" style="border: 0;height: auto;" alt="twitter icon">
+                                                    </a>
+                                                </td>
+                                                <td style="text-align:center;">
+                                                    <a href="https://www.facebook.com/UnionLosAngeles" target="_blank" style="text-decoration: none;">
+                                                        <img src="https://kgportfoliosite.s3.us-west-1.amazonaws.com/Website/assets/images/images/Union/images/facebook-icon.png" width="32" style="border: 0;height: auto;" alt="facebook icon">
+                                                    </a>
+                                                </td>
+                                                <td style="text-align:center;">
+                                                    <a href="https://www.instagram.com/unionlosangeles" target="_blank" style="text-decoration: none;">
+                                                        <img src="https://kgportfoliosite.s3.us-west-1.amazonaws.com/Website/assets/images/images/Union/images/instagram-icon.png" width="32" style="border: 0;height: auto;" alt="instagram icon">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!-- Social media end -->
+                            <!-- Footer start -->
+                            <table class="section-container" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
+                                <tr>
+                                    <td class="dark-bg" style="text-align:center;">
+                                        <p class="footer-text" style="margin: 20px; font-size: 16px;line-height: 20pt;color: #111111;font-weight: 400;font-family: 'Open Sans', sans-serif;">
+                                            No longer want to receive these emails?
+                                            <a class="footer-link" href="https://example.com" target="_blank" style="text-decoration: underline;color: #197bbd;">
+                                                Unsubscribe.
+                                            </a>
+                                            <!-- real link was not used for the Unsubscribe text due to ESP issues -->
+                                            <br>UNION LOS ANGELES 110 S Labrea Ave. Los Angeles, California 90036
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!-- Footer end -->
                         </td>
-                      </tr>
-                    </table>
-                    <!-- Footer end -->
+                    </tr>
+                </table>
+                <!--[if mso]>
                 </td>
-            </tr>
-         </table>
-         <!--[if mso]>
-         </td>
-         </tr>
-         </table>
-         <![endif]-->
-          <!-- Ghost table for rendering in MSO 2007 - 2010 end -->
-      </div>
-      <!--[if mso >
+                </tr>
+                </table>
+                <![endif]-->
+                <!-- Ghost table for rendering in MSO 2007 - 2010 end -->
+            </div>
+            <!--[if mso >
             </td>
         </tr>
       </table>
       <![endif]-->
-   </center>
-</body>
+        </center>
+    </body>
 </html>
